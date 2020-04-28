@@ -96,9 +96,8 @@ Virtualenv can avoid a lot of the QT / Python version issues
 .. code:: shell
 
     brew install python3
-    pip3 install pipenv
-    pipenv run pip install pyqt5==5.13.2 lxml
-    pipenv run make qt5py3
+    pip install pyqt5
+    pip install lxml
     python3 labelImg.py
     [Optional] rm -rf build dist; python setup.py py2app -A;mv "dist/labelImg.app" /Applications
 
